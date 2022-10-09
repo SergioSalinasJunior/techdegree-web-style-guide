@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0 0 em(80px);
 
+    @include mq(med) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
     &__item {
         a {
             &:link,
@@ -12,11 +18,18 @@
                 width: 100%;
                 text-align: center;
                 text-decoration: none;
-                font-weight: 300;
+                font-weight: normal;
                 font-size: em(20px);
                 padding: em(20px);
-                border-radius: em(10px);
+                border-radius: em(5px);
                 transition: color 0.3s, background-color 0.3s;
+
+                @include mq(med) {
+                    padding: em(7px) em(20px);
+                }
+                @include mq(large) {
+                    padding: em(3px) em(20px);
+                }
             }
             &:hover,
             &:active {

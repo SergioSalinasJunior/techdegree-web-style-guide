@@ -4,13 +4,17 @@
     border: 0;
     border-radius: 5px;
     color: $white;
-    text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
+
+    @include mq(large) {
+        padding: 10px 30px;
+    }
 }
 
 %btn {
     @extend %rounded;
     width: 100%;
+    text-transform: uppercase;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
     margin: em(12px) 0;

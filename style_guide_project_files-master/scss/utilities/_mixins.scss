@@ -1,22 +1,22 @@
 // Media Query Mixin
 @mixin mq($break) {
-    @if $break == 'nav-break' {
+    @if $break == 'med' {
         @media (min-width: $break-md) {
             @content;
         }
     }
-    @else if $break == 'desktop' {
+    @else if $break == 'large' {
         @media (min-width: $break-lg) {
             @content;
         }
     }
     @else {
-        @error "ERROR:'#{$break}' is not a valid option. Please enter 'nav-break' or desktop' for this mixin";
+        @error "ERROR:'#{$break}' is not a valid option. Please enter 'med' or 'large' for this mixin";
     }
 }
 
 // Flexbox Settings Mixin
-@mixin flexy ($dir: row, $just: flex-start, $align: stretch){
+@mixin flexy ($dir: row, $just: space-between, $align: stretch){
     display: flex;
     flex-direction: $dir;
     justify-content: $just;

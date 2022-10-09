@@ -4,6 +4,7 @@
 
 p {
   margin: 0;
+  width: 95%;
 }
 
 ul {
@@ -326,12 +327,17 @@ template {
   border: 0;
   border-radius: 5px;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
+}
+@media (min-width: 1400px) {
+  .grid__col--12.theme__colors, .grid__col--11.theme__colors, .grid__col--10.theme__colors, .grid__col--9.theme__colors, .grid__col--8.theme__colors, .grid__col--7.theme__colors, .grid__col--6.theme__colors, .grid__col--5.theme__colors, .grid__col--4.theme__colors, .grid__col--3.theme__colors, .grid__col--2.theme__colors, .grid__col--1.theme__colors, .btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
+    padding: 10px 30px;
+  }
 }
 
 .btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
   width: 100%;
+  text-transform: uppercase;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   margin: 0.6666666667em 0;
@@ -348,16 +354,17 @@ template {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__row {
     flex-direction: row;
+    align-items: center;
   }
 }
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--1 {
     margin-top: 0;
     flex-basis: 8.3333333333%;
@@ -367,7 +374,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--2 {
     margin-top: 0;
     flex-basis: 16.6666666667%;
@@ -377,7 +384,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--3 {
     margin-top: 0;
     flex-basis: 25%;
@@ -387,7 +394,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--4 {
     margin-top: 0;
     flex-basis: 33.3333333333%;
@@ -397,7 +404,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--5 {
     margin-top: 0;
     flex-basis: 41.6666666667%;
@@ -407,7 +414,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--6 {
     margin-top: 0;
     flex-basis: 50%;
@@ -417,7 +424,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--7 {
     margin-top: 0;
     flex-basis: 58.3333333333%;
@@ -427,7 +434,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--8 {
     margin-top: 0;
     flex-basis: 66.6666666667%;
@@ -437,7 +444,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--9 {
     margin-top: 0;
     flex-basis: 75%;
@@ -447,7 +454,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--10 {
     margin-top: 0;
     flex-basis: 83.3333333333%;
@@ -457,7 +464,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--11 {
     margin-top: 0;
     flex-basis: 91.6666666667%;
@@ -467,7 +474,7 @@ template {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .grid__col--12 {
     margin-top: 0;
     flex-basis: 100%;
@@ -487,7 +494,7 @@ template {
 }
 .grid__col--4.theme__colors {
   text-align: center;
-  background: #3ebe64;
+  background: #9cecfd;
 }
 .grid__col--5.theme__colors {
   text-align: center;
@@ -495,15 +502,15 @@ template {
 }
 .grid__col--6.theme__colors {
   text-align: center;
-  background: #04bbe3;
+  background: #03a6ca;
 }
 .grid__col--7.theme__colors {
   text-align: center;
-  background: #dc4a51;
+  background: #eca0a3;
 }
 .grid__col--8.theme__colors {
   text-align: center;
-  background: #fc5024;
+  background: #fea088;
 }
 .grid__col--9.theme__colors {
   text-align: center;
@@ -511,7 +518,7 @@ template {
 }
 .grid__col--10.theme__colors {
   text-align: center;
-  background: #7558b1;
+  background: #af9ed1;
 }
 .grid__col--11.theme__colors {
   text-align: center;
@@ -519,23 +526,41 @@ template {
 }
 .grid__col--12.theme__colors {
   text-align: center;
-  background: #83e7fd;
+  background: #83dfcf;
 }
 
-@media (min-width: 768px) {
+[class^=grid__col] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media (min-width: 769px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
+  }
+}
+@media (min-width: 769px) {
+  [class^=grid__col] {
+    flex-direction: row;
   }
 }
 
 .container {
   background: #fff;
   margin: 0 auto;
-  padding: 0 1.1111111111em;
+  padding: 0 1.3888888889em;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1050px;
+  }
 }
 
-.centered {
-  margin: 0 auto;
+@media (min-width: 769px) {
+  .centered {
+    margin: 0 auto;
+  }
 }
 
 .container {
@@ -545,9 +570,6 @@ template {
   line-height: 1.6666666667;
   font-weight: normal;
   font-style: normal;
-}
-.container > .headline--secondary {
-  margin-left: 1.3em;
 }
 
 .headline--primary {
@@ -560,7 +582,7 @@ template {
 }
 .headline--secondary {
   font-size: 1.1111111111em;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.2;
   margin: 2em 0 1.4em;
 }
@@ -585,26 +607,6 @@ template {
   color: #7e8d9a;
 }
 
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(../../fonts/Helvetica-Neue-Font/MediumExtended/Helvetica\ Neue\ Medium\ Extended.otf);
-  font-style: normal;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(../../fonts/Helvetica-Neue-Font/MediumItalic/Helvetica\ Neue\ W01\ 66\ Medium\ It.otf);
-  font-style: italic;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(../../fonts/Helvetica-Neue-Font/BoldLight/Helvetica\ Neue\ W01\ 77\ Bd\ Cn\ Obl.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(../../fonts/Helvetica-Neue-Font/UltraLight/Helvetica\ Neue\ UltraLight.otf);
-  font-weight: 300;
-}
 .nav {
   display: flex;
   flex-direction: column;
@@ -613,17 +615,34 @@ template {
   padding: 0;
   margin: 0 0 4.4444444444em;
 }
+@media (min-width: 769px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
 .nav__item a:link, .nav__item a:visited {
   color: #aaaaaa;
   display: block;
   width: 100%;
   text-align: center;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 1.1111111111em;
   padding: 1.1111111111em;
-  border-radius: 0.5555555556em;
+  border-radius: 0.2777777778em;
   transition: color 0.3s, background-color 0.3s;
+}
+@media (min-width: 769px) {
+  .nav__item a:link, .nav__item a:visited {
+    padding: 0.3888888889em 1.1111111111em;
+  }
+}
+@media (min-width: 1400px) {
+  .nav__item a:link, .nav__item a:visited {
+    padding: 0.1666666667em 1.1111111111em;
+  }
 }
 .nav__item a:hover, .nav__item a:active {
   color: #fff;
@@ -669,10 +688,16 @@ template {
   background-color: #927bc1;
 }
 
+@media (min-width: 769px) {
+  [class^=btn] + [class^=btn] {
+    margin-left: 20px;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   width: 100%;
 }

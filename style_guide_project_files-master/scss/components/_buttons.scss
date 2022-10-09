@@ -2,3 +2,13 @@
     // use the sass map
     @include btn-colors($ui-colors);
 }
+
+[class^=btn] {
+    // btn + btn, targets two sibling buttons
+    & + & {
+        @include mq(med) {
+            // add gutter
+            margin-left: 20px;
+        }
+    }
+}
