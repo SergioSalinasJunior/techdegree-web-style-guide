@@ -321,7 +321,7 @@ template {
   display: none;
 }
 
-.btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
+.grid__col--12.theme__colors, .grid__col--11.theme__colors, .grid__col--10.theme__colors, .grid__col--9.theme__colors, .grid__col--8.theme__colors, .grid__col--7.theme__colors, .grid__col--6.theme__colors, .grid__col--5.theme__colors, .grid__col--4.theme__colors, .grid__col--3.theme__colors, .grid__col--2.theme__colors, .grid__col--1.theme__colors, .btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
   padding: 15px 30px;
   border: 0;
   border-radius: 5px;
@@ -334,7 +334,7 @@ template {
   width: 100%;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  margin: em(12px) 0;
+  margin: 0.6666666667em 0;
 }
 .btn--info.theme__colors:hover, .btn--warning.theme__colors:hover, .btn--error.theme__colors:hover, .btn--success.theme__colors:hover, .btn--default.theme__colors:hover {
   opacity: 0.7;
@@ -473,11 +473,69 @@ template {
     flex-basis: 100%;
   }
 }
+.grid__col--1.theme__colors {
+  text-align: center;
+  background: #4e5a64;
+}
+.grid__col--2.theme__colors {
+  text-align: center;
+  background: #fec9bb;
+}
+.grid__col--3.theme__colors {
+  text-align: center;
+  background: #bdafd9;
+}
+.grid__col--4.theme__colors {
+  text-align: center;
+  background: #3ebe64;
+}
+.grid__col--5.theme__colors {
+  text-align: center;
+  background: #89d9a1;
+}
+.grid__col--6.theme__colors {
+  text-align: center;
+  background: #04bbe3;
+}
+.grid__col--7.theme__colors {
+  text-align: center;
+  background: #dc4a51;
+}
+.grid__col--8.theme__colors {
+  text-align: center;
+  background: #fc5024;
+}
+.grid__col--9.theme__colors {
+  text-align: center;
+  background: #eca0a3;
+}
+.grid__col--10.theme__colors {
+  text-align: center;
+  background: #7558b1;
+}
+.grid__col--11.theme__colors {
+  text-align: center;
+  background: #fea088;
+}
+.grid__col--12.theme__colors {
+  text-align: center;
+  background: #83e7fd;
+}
 
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
   }
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  padding: 0 1.1111111111em;
+}
+
+.centered {
+  margin: 0 auto;
 }
 
 .container {
@@ -489,26 +547,26 @@ template {
   font-style: normal;
 }
 .container > .headline--secondary {
-  margin-left: em(26px, 20px);
+  margin-left: 1.3em;
 }
 
 .headline--primary {
-  font-size: em(36px);
+  font-size: 2em;
   font-weight: bold;
   line-height: 1.1;
   color: #5ad5bf;
-  margin-bottom: em(60px, 36px);
+  margin-bottom: 1.6666666667em;
   margin-left: 5%;
 }
 .headline--secondary {
-  font-size: em(20px);
+  font-size: 1.1111111111em;
   font-weight: 300;
   line-height: 1.2;
-  margin: em(40px, 20px) 0 em(28px, 20px);
+  margin: 2em 0 1.4em;
 }
 
 .link {
-  color: #5ad5bf;
+  color: #51ddfc;
   font-weight: bold;
   text-decoration: none;
   width: 165px;
@@ -519,9 +577,9 @@ template {
   border-left: 10px solid #5ad5bf;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding-left: em(10px);
-  margin-top: em(36px);
-  font-size: em(26px);
+  padding-left: 0.5555555556em;
+  margin-top: 2em;
+  font-size: 1.4444444444em;
   line-height: 1.2;
   font-style: italic;
   color: #7e8d9a;
@@ -553,7 +611,7 @@ template {
   justify-content: center;
   align-items: stretch;
   padding: 0;
-  margin: 0 0 em(80px);
+  margin: 0 0 4.4444444444em;
 }
 .nav__item a:link, .nav__item a:visited {
   color: #aaaaaa;
@@ -562,9 +620,9 @@ template {
   text-align: center;
   text-decoration: none;
   font-weight: 300;
-  font-size: em(20px);
-  padding: em(20px);
-  border-radius: em(10px);
+  font-size: 1.1111111111em;
+  padding: 1.1111111111em;
+  border-radius: 0.5555555556em;
   transition: color 0.3s, background-color 0.3s;
 }
 .nav__item a:hover, .nav__item a:active {
@@ -577,14 +635,14 @@ template {
   margin: 0 auto;
   width: 100%;
   max-width: 165px;
-  margin: em(15px) auto;
+  margin: 0.8333333333em auto;
 }
 .img--avatar {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 199px;
-  margin: em(30px) auto;
+  margin: 1.6666666667em auto;
 }
 .img--frame {
   border: 1px solid #c4c4c4;

@@ -39,6 +39,12 @@ $grid-colors: (
 	12: lighten($malibu, 10%)
 );
 
+// Grid
+$grid-col-width: 65px;
+$grid-gutter-width: 20px;
+$grid-col-count: 12;
+$grid-container-max-width: 1050px;
+
 //Fonts Variables
 $font-stack: 'Helvetica Neue', Helvetica, sans-serif;
 $base__font-size: 18px;

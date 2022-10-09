@@ -4,7 +4,7 @@
     color: $text-color;
     font-family: $font-stack;
     font-size: $base__font-size;
-    line-height: ( $base__line / $base__font-size );
+    line-height: calc( $base__line / $base__font-size );
     font-weight: normal;
     font-style: normal;
       > .headline--secondary {
@@ -32,7 +32,7 @@
   }
 
   .link {
-    color: $color-accent;
+    color: $malibu;
     font-weight: bold;
     text-decoration: none;
     width: 165px;
