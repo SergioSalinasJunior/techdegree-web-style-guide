@@ -1,0 +1,25 @@
+// Media Query Mixin
+@mixin medium($break) {
+    @if $break == 'medium' {
+        @media (min-width: $break-medium) {
+        @content;
+        }
+    }
+    @else if $break == 'desktop' {
+        @media (min-width: $break-desktop) {
+        @content;
+        }
+    }
+    @else {
+        @error "ERROR: Please enter valid values of 'medium' or 'desktop' as argument. Value entered: '#{$break}'.";
+    }
+}
+
+// Flexbox Settings Mixin
+@mixin flexy ($dir: row, $just: flex-start, $align: stretch){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+    @content;
+}
