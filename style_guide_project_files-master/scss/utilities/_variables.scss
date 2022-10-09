@@ -1,0 +1,21 @@
+//Colors variables
+$primary-color: #58e1c1;
+$default-color: #51ddfc;
+$success-color: #63cc82;
+$error-color: #e4757a;
+$warning-color: #fd7856;
+$info-color: #927bc1;
+
+$subheadings-color: #aaaaaa; //check if lighten is not best option => lighten($text-color, 30%);
+$text-color: #878787;
+$white: #fff;
+
+//Fonts Variables
+$font-url--google: 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900';
+$font-stack: 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$base__font-size: 18px;
+$base__line: 30px;
+
+// Breakpoints Variables
+$break-medium: 769px;
+$break-desktop: 1400px;
