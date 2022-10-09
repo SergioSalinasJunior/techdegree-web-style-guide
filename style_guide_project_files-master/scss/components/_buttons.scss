@@ -1,0 +1,4 @@
+.btn {
+    // use the sass map
+    @include btn-colors($ui-colors);
+}

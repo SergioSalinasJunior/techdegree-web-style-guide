@@ -1,17 +1,17 @@
 // Media Query Mixin
-@mixin medium($break) {
-    @if $break == 'medium' {
-        @media (min-width: $break-medium) {
-        @content;
+@mixin mq($break) {
+    @if $break == 'nav-break' {
+        @media (min-width: $break-md) {
+            @content;
         }
     }
     @else if $break == 'desktop' {
-        @media (min-width: $break-desktop) {
-        @content;
+        @media (min-width: $break-lg) {
+            @content;
         }
     }
     @else {
-        @error "ERROR: Please enter valid values of 'medium' or 'desktop' as argument. Value entered: '#{$break}'.";
+        @error "ERROR:'#{$break}' is not a valid option. Please enter 'nav-break' or desktop' for this mixin";
     }
 }
 
@@ -22,4 +22,15 @@
     justify-content: $just;
     align-items: $align;
     @content;
+}
+
+// Button Colors Theme Mixin
+@mixin btn-colors($map) {
+    @each $theme, $color in $map {
+        &--#{$theme}.theme__colors {
+            @extend %btn;
+            background-color: $color;
+            @content;
+        }
+    }
 }

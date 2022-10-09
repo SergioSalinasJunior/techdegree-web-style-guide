@@ -321,6 +321,28 @@ template {
   display: none;
 }
 
+.btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
+  width: 100%;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  margin: em(12px) 0;
+}
+.btn--info.theme__colors:hover, .btn--warning.theme__colors:hover, .btn--error.theme__colors:hover, .btn--success.theme__colors:hover, .btn--default.theme__colors:hover {
+  opacity: 0.7;
+}
+.btn--info.theme__colors:active, .btn--warning.theme__colors:active, .btn--error.theme__colors:active, .btn--success.theme__colors:active, .btn--default.theme__colors:active {
+  opacity: initial;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -459,11 +481,11 @@ template {
 }
 
 .container {
-  color: #878787;
-  font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #7e8d9a;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.6666666667;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 .container > .headline--secondary {
@@ -472,9 +494,9 @@ template {
 
 .headline--primary {
   font-size: em(36px);
-  font-weight: 900;
+  font-weight: bold;
   line-height: 1.1;
-  color: #58e1c1;
+  color: #5ad5bf;
   margin-bottom: em(60px, 36px);
   margin-left: 5%;
 }
@@ -486,15 +508,15 @@ template {
 }
 
 .link {
-  color: #58e1c1;
-  font-weight: 700;
+  color: #5ad5bf;
+  font-weight: bold;
   text-decoration: none;
   width: 165px;
   align-self: center;
 }
 
 .blockquote {
-  border-left: 10px solid #58e1c1;
+  border-left: 10px solid #5ad5bf;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding-left: em(10px);
@@ -502,9 +524,29 @@ template {
   font-size: em(26px);
   line-height: 1.2;
   font-style: italic;
-  color: #878787;
+  color: #7e8d9a;
 }
 
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../../fonts/Helvetica-Neue-Font/MediumExtended/Helvetica\ Neue\ Medium\ Extended.otf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../../fonts/Helvetica-Neue-Font/MediumItalic/Helvetica\ Neue\ W01\ 66\ Medium\ It.otf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../../fonts/Helvetica-Neue-Font/BoldLight/Helvetica\ Neue\ W01\ 77\ Bd\ Cn\ Obl.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../../fonts/Helvetica-Neue-Font/UltraLight/Helvetica\ Neue\ UltraLight.otf);
+  font-weight: 300;
+}
 .nav {
   display: flex;
   flex-direction: column;
@@ -527,7 +569,7 @@ template {
 }
 .nav__item a:hover, .nav__item a:active {
   color: #fff;
-  background-color: #58e1c1;
+  background-color: #5ad5bf;
 }
 
 .img--logo {
@@ -553,6 +595,22 @@ template {
   margin: 0 auto;
 }
 
+.btn--default.theme__colors {
+  background-color: #51ddfc;
+}
+.btn--success.theme__colors {
+  background-color: #63cc82;
+}
+.btn--error.theme__colors {
+  background-color: #e4757a;
+}
+.btn--warning.theme__colors {
+  background-color: #fd7856;
+}
+.btn--info.theme__colors {
+  background-color: #927bc1;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -569,13 +627,13 @@ template {
 }
 .form__input {
   border: none;
-  border-bottom: 7px solid #58e1c1;
+  border-bottom: 7px solid #5ad5bf;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 30px;
   padding: 10px;
   font-weight: 700;
-  color: #878787;
+  color: #7e8d9a;
 }
 .form__input:focus {
   outline: none;
@@ -584,16 +642,16 @@ template {
   background-color: white;
 }
 .form__input::-webkit-input-placeholder {
-  color: #878787;
+  color: #7e8d9a;
 }
 .form__input:-ms-input-placeholder {
-  color: #878787;
+  color: #7e8d9a;
 }
 .form__input::-ms-input-placeholder {
-  color: #878787;
+  color: #7e8d9a;
 }
 .form__input::placeholder {
-  color: #878787;
+  color: #7e8d9a;
 }
 
 /*# sourceMappingURL=styles.css.map */
